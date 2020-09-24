@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        style
+            include ../static/historystyle.css
+    body
+        table
+            thead
+                tr
+                    th email
+                    th ticketID
+                    th entry date
+                    th exit date
+            tbody
+                each i in details
+                    tr
+                        td= i.email
+                        td= i._id
+                        td= i.entrydate
+                        td= i.exitdate

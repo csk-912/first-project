@@ -1,0 +1,32 @@
+extends base.pug
+
+block scripts
+
+block style
+    style
+        include ../static/registrationstyle.css
+block content
+    div.container
+        h2 Thanks for choosing our services.
+        h4 Fill the details for registration.
+        form(action="/registration",class='register',method = 'post')
+            input(type="text",class = 'inputreg',name = 'name',placeholder = 'Enter your name',)
+            div.radio
+                input(type="radio", name="gender", value=1) 
+                | Male
+                input(type="radio", name="gender", value=0)
+                | Female
+            input(type="Number",class = 'inputreg',name = 'age',placeholder = 'Enter your age',)
+            div.radio
+                input(type="radio", name="vehicletype", value=1) 
+                | 4-wheeler
+                input(type="radio", name="vehicletype", value=0)
+                | 2-wheeler
+            input(type="text",class = 'inputreg',name = 'vehiclenumber',placeholder = 'Enter your vehicle number',)
+            input(type="email",class = 'inputreg',name = 'email',placeholder = 'Enter your emailID',)
+            input(type="Number",class = 'inputreg',name = 'phonenumber',placeholder = 'Enter your mobile number',)
+            input(type="text",class = 'inputreg',name = 'username',placeholder = 'Enter your username',)
+            input(type="password",class = 'inputreg',name = 'password',placeholder = 'Set your password',)
+            input(type="password",class = 'inputreg',name = 'cnfpassword',placeholder = 'Enter your password again',)
+            button.btn(onClick ="/login") Register
+            

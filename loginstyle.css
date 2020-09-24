@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2,h4{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container{
+    background-color: aqua;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px;
+    /* background-color: red; */
+    border: 2px solid black;
+}
+
+.inputclass{
+    width: 30%;
+    margin: 15px 15px;
+}
+
+.login{
+    font-size: small;
+    float: right;
+    text-decoration: none;
+    border: 2px solid blue;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 9px 18px;
+    margin: 35px 9px;
+}
+

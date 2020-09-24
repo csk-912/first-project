@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#service{
+    border: 2px solid blue;
+    height: 1000px;
+    background-color : grey;
+}
+
+#service h2 {
+    text-align: center;
+    padding: 35px 2px;
+}
+
+#service p {
+    padding :  7px 30px ;
+}
+
+#service #btn{
+    display: block;
+    margin: 20px auto;
+    padding: 5px 18px;
+    border-radius: 15px;
+}
+
+#service form input{
+    display: block;
+    margin: 25px auto;
+}

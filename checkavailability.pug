@@ -1,0 +1,23 @@
+extends base.pug
+
+block style
+    style
+        include ../static/checkavailabilitystyle.css
+
+block content 
+    nav#navbar
+        ul
+            img(src="../static/parkinglogo.jpg", alt="loading LOGO")
+            li #[a(href = '/Home') Home]
+            li #[a(href = '/Services') Services] 
+            li #[a(href = '/AboutUs') About us] 
+            li #[a(href = '/ContactUs') Contact us]
+            li #[a(href = '/',class = 'logout') log out]
+    div.container
+        h3 Check for slots available.
+        form(action="/checkavailability",method = 'post',class = 'checkform')
+            input(type="date",placeholder = 'Enter entry date ',name ='entrydate',class = 'myinput',)
+            input(type="time",placeholder = 'Enter the entry time ',name = 'entrytime',class = 'myinput')
+            input(type="date",placeholder = 'Enter exit date ',name ='exitdate',class = 'myinput',)
+            input(type="time",placeholder = 'Enter the exit time ',name = 'exittime',class = 'myinput')
+            button.btn submit

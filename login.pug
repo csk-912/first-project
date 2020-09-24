@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts
+
+block style
+    style
+        include ../static/loginstyle.css
+
+block content
+    div.container
+        h2 Welcome to our service.
+        h4 Login to access our services.
+        a(href="/registration",class='login') New User?Sign Up
+        form(action="/",method='post',class='loginform')
+            input(type="text",name='username',placeholder='Enter your username',class='inputclass')
+            input(type="password",name='password',placeholder='Enter your password.',class='inputclass')
+            a(href="/forgotpassword",class = 'link') forgot password
+            button.btn(onClick ="/home") login

@@ -1,0 +1,13 @@
+extends base.pug
+
+block style
+    style
+        include ../static/additionalservicesstyle.css
+
+block content 
+    section#service
+        h2 Servicing facility
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae minus cum ipsum molestiae impedit doloribus molestias minima harum quibusdam voluptatum atque facere repellendus, fugit excepturi praesentium iusto aperiam laborum! Facere architecto natus corrupti accusamus molestias, expedita explicabo saepe doloribus ut.
+        form(action="/additionalservices",method = 'post')
+            input(type="text",name = 'username',placeholder = 'Enter your username ')
+            button#btn register

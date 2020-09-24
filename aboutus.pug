@@ -1,0 +1,19 @@
+extends base.pug
+
+block style
+    style
+        include ../static/aboutusstyle.css
+
+block content
+    nav#navbar
+        ul
+            img(src="../static/parkinglogo.jpg", alt="loading LOGO")
+            li #[a(href = '/Home') Home]
+            li #[a(href = '/Services') Services] 
+            li #[a(href = '/AboutUs') About us] 
+            li #[a(href = '/ContactUs') Contact us]
+            li #[a(href = '/',class = 'logout') log out]
+    section#introduction
+        h3 Thanks for using our product.
+        p This software will enable us to save time on finding parking spaces. Not only finding emptyparking spaces in short time but also ensure safety,security to the vehicle. This software takes some details like vehicle number and also some personal details like name,phone number,ID proof.  After providing the above details the software will ask you to tell about when do you want to reserve the parking space(selected by user). Once the booking is approved ,the manager will do the arrangements for parking spaces for the particular time. Also the automatic billing system is also  available which generates the bill based on the parking fee per hour and also based on the type of parking(parking store, underground parking).
+        p The parking management system helps the manager to manage the parking spaces more effectivelyand efficiently. This product is a replacement of manual management system which is timeconsuming and also it requires more manpower like security at the entry gate has to check theproofs and then the staff inside who is managing inside also has to check for the availability ofempty parking spaces and then allocate it to that arrived vehicle. It is taking a lot of time to managfor a single vehicle. A lot of patience is required as vehicles get clubbed(queued up) which is awaste of time. This product makes everything online. Every person will be able to use this product.This system makes things quickly and it saves valuable time. 

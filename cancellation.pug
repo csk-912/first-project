@@ -1,0 +1,22 @@
+extends base.pug
+
+block style
+    style
+        include ../static/cancellationstyle.css
+
+block content
+    nav#navbar
+        ul
+            img(src="../static/parkinglogo.jpg", alt="loading LOGO")
+            li #[a(href = '/Home') Home]
+            li #[a(href = '/Services') Services] 
+            li #[a(href = '/AboutUs') About us] 
+            li #[a(href = '/ContactUs') Contact us]
+            li #[a(href = '/',class = 'logout') log out]
+    div.container
+        h1 Cancellation page
+        form(action="/cancellation",method = "post",class = "myform")
+            input(type="email",placeholder="Enter your email",name = "email",class = "myinput")
+            input(type="text",placeholder="Enter the reserved ticket ID",name = "ticketID",class = "myinput")
+            button.btn
+                |submit

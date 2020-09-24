@@ -1,0 +1,24 @@
+extends base.pug
+
+block style
+    style
+        include ../static/contactusstyle.css
+
+block content
+    nav#navbar
+        ul
+            img(src="../static/parkinglogo.jpg", alt="loading LOGO")
+            li #[a(href = '/Home') Home]
+            li #[a(href = '/Services') Services] 
+            li #[a(href = '/AboutUs') About us] 
+            li #[a(href = '/ContactUs') Contact us]
+            li #[a(href = '/',class = 'logout') log out]
+    div.container
+        h1 Contact Us
+        form(action="/ContactUs",method = "post",class = "myform")
+            input(type="text",placeholder="Enter your name",name = "name",class = "myinput")
+            input(type="email",placeholder="Enter your email",name = "email",class = "myinput")
+            textarea(name="concern", cols="30", rows="10",placeholder = 'Enter your concern',class ='myinput')
+            //- input(type="text",placeholder="Enter your address",name = "address",class = "myinput")
+            button.btn
+                |submit

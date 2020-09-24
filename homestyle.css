@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    background-color:#e8afaf;
+    padding: 10px 10px;
+}
+
+#navbar ul{
+    display : flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+#navbar ul img{
+    height: 60px;
+    width: 70px;
+    margin: 0px 40px;
+}
+
+#navbar ul li{
+    padding: 20px 70px;
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+}
+
+#navbar ul li .logout{
+    margin-left: 630px;
+}
+
+#introSection{
+    height: 400px;
+    text-align: center;
+    background: url('/static/section\ intro\ background\ image.jpg') no-repeat center ;
+    background-size: cover;
+}
+
+
+
+#introSection .large{
+    font-size: 40px;
+    padding: 35px 5px;
+}
+
+#introSection .small{
+    font-size: 30px;
+    padding: 20px 5px;
+}
+
+#missionSection{
+    height: 1200px;
+    background-color: mediumaquamarine;
+}
+
+#missionSection h3{
+    text-align: center;
+    padding: 39px;
+}
+
+#missionSection .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid navajowhite; */
+}
+
+#missionSection .container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid royalblue; */
+}
+
+#missionSection .container .card{
+    border: 2px solid yellow;
+    height: 390px;
+    width: 465px;
+    margin: 85px auto;
+    background: url('/static/mission\ section\ card\ image\ 1.jpg') no-repeat center ;
+    background-size: cover;
+}
+
+#missionSection .container .card h4{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 6px 10px;
+}
+
+#missionSection .container .card p{
+    padding: 2px 25px;
+}
+
+#missionSection .container .card button{
+    margin: 2px auto;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+
+#missionSection .container1 .card1{
+    border: 2px solid yellow;
+    height: 325px;
+    width: 420px;
+    margin: 85px auto;
+    background: url('/static/mission\ section\ card\ image\ 1.jpg') no-repeat center ;
+    background-size: cover;
+}
+
+#missionSection .container1 .card1 h4{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 6px 10px;
+}
+
+#missionSection .container1 .card1 p{
+    padding: 2px 25px;
+}
+
+#footSection{
+    height: 100px;
+    background-color: black;
+    color: goldenrod;
+}
+#footSection .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footSection .container .largefoot{
+    font-size: 15px;
+    padding: 25px 10px;
+}
+
+#footSection .container .smallfoot{
+    font-size: 12px;
+}

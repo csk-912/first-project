@@ -1,0 +1,12 @@
+extends base.pug
+
+block style
+    style
+        include ../static/getdetailsstyle.css
+
+block content
+    div.container
+        h2 Enter your email to see your history
+        form(action="/getdetails",class='myform',method = 'post')
+            input(type="email",placeholder = 'Enter your emailID',name = 'email') 
+            button Submit

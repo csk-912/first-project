@@ -1,0 +1,50 @@
+extends base.pug
+
+block style
+    style
+        include ../static/servicesstyle.css
+
+block content
+    nav#navbar
+        ul
+            img(src="../static/parkinglogo.jpg", alt="loading LOGO")
+            li #[a(href = '/Home') Home]
+            li #[a(href = '/Services') Services] 
+            li #[a(href = '/AboutUs') About us] 
+            li #[a(href = '/ContactUs') Contact us]
+            li #[a(href = '/',class = 'logout') log out]
+    section#first
+        h3 This is for booking slot.
+        p To avail this service,You have to provide us with the details like the exact date and time for bookingthe slot.After selecting the date and time,the product will automatically show you the availabibility status.If the slots are available you will be able to proceed for booking.Otherwise, you have to check for slots at other interval.After that you will be redirected to payment page.After sucessfull payment you will be able to see the generate ticket option which implies your booking got confirmed.To see the ticketID of the reserved slot please visit history page.
+        form(action="/bookslot")
+            button Book slot
+    section#second
+        h3 This is for time extension part.
+        p You also have an option of extending the time of parking slot on that day.If you have some other work and you need to park your vehicle for some more time you can actually keep request for the extension.If the slots are available for the extended time requested then the permission is granted and extra fee is applicable.If not available then you will be able to use the facility on extra price.
+        form(action="/requestextension")
+            button Request extension
+    section#third
+        h3 This is for checking slot availability.
+        p To avail this service,you have to provide the details of the vehicle and also date and time.After the submission you will be provided with the details related to the availabe spaces on that day.If you are able to see that empty spaces are available you have the option to book that the slot for that for the particular time and date.Other wise you will be redirected to the page again which indicates that no spaces are available on that day.
+        form(action="/checkavailability")
+            button Check availability
+    section#sixth
+        h3 This is for checking the history of the bookings
+        p Using this you can obtain the history of bookings you booked so far.This is going to show the details in table format.This also gives you the ticketId with which you can use to extend time request as well as other requirements.
+        form(action="/getdetails")
+            button History
+    section#fourth
+        h3 Cancel slots
+        p This allows you to cancel the reserved slots.For this you have to enter the reserved ticket ID.and then slot reservation gets cancelled.And refund is generated automatically.
+        form(action="/cancellation")
+            button Cancel slots
+    section#fifth
+        h3 This is for additional services.
+        p Time is important for every one.It never comes back. Also it is important to make sure that your vehicle is clean and looks good also every part is working fine.We are providing the facilities like servicing and cleaning vehicle during parking time so that you can save time.This is facility for easily locating the parkingslot from your home.It becomes easy for the vehicle owner to reach the parking spot.As usual it saves time.More over it provides the best and shortest route based on the traffic situation.
+        button
+            a(href="/additionalservices") additional services
+    section#footSection
+        div.container
+            div.largefoot You agree to have read and cookie and privacy policy. Copyright 2020-2021. All Rights Reserved.
+            div.smallfoot Designed and built by Sunil Kumar. 
+                | Currently version 1.0.0

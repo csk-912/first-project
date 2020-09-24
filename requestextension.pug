@@ -1,0 +1,22 @@
+extends base.pug
+
+block style
+    style
+        include ../static/requestextensionstyle.css
+
+block content 
+    nav#navbar
+        ul
+            img(src="../static/parkinglogo.jpg", alt="loading LOGO")
+            li #[a(href = '/Home') Home]
+            li #[a(href = '/Services') Services] 
+            li #[a(href = '/AboutUs') About us] 
+            li #[a(href = '/ContactUs') Contact us]
+            li #[a(href = '/',class = 'logout') log out]
+    div.container
+        h3 Enter details for extension request
+        form(action="/requestextension",method = 'post',class = 'checkform')
+            input(type="text",placeholder = 'Enter ticked ID  ',name ='ticketID',class = 'myinput')
+            input(type="date",placeholder = 'Enter new exit date ',name ='newexitdate',class = 'myinput',)
+            input(type="time",placeholder = 'Enter new exit time ',name = 'newexittime',class = 'myinput')
+            button.btn submit
